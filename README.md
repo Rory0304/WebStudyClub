@@ -12,7 +12,6 @@ Week| Contents |
 4주차 | [React] Making the Movie App, Deploying, Routing |
 5주차 | React 활용한 웹 프로젝트 진행 |
 6주차 | React 활용한 웹 프로젝트 진행 |
-<br>
 
 ## 활동 방법
 해당 주차의 스터디 내용을 Readme로 작성하거나, 코드를 커밋해서 깃에 스터디 기록을 남겨주시면 됩니다.
