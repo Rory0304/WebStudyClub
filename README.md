@@ -1,6 +1,6 @@
 # :crown:  ERICA Web Study Club
 에리카 웹 스터디 클럽은 한양대 에리카에서 진행하는 또래 튜터링 사업으로, 이론 공부와 프로젝트를 함께 진행하는 스터디 모임입니다.
-최신 Javascript와 React를 익히고 React 기반 영화 웹 어플리케이션을 제작을 목표로 합니다.
+최신 Javascript와 React를 익히고 React 기반 영화 웹 어플리케이션 제작을 목표로 합니다.
 <br>
 
 ## 목차
