@@ -6,7 +6,7 @@
 ## 목차
 Week| Contents |
 -----|-----|
-1주차 | [Javascript] Variables, Functions, Strings, Array, Destructuring, Reset and Spread |
+1주차 | [Javascript] Variables, Functions, Strings, Array, Destructuring, Rest and Spread |
 2주차 | [Javascript] Promises, Async/Await, Classes, Set and Map |
 3주차 | [React] JSX & Props, State |
 4주차 | [React] Making the Movie App, Deploying, Routing |
