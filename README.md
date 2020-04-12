@@ -5,6 +5,7 @@
 ## 공지!
 2020-04-03 : wiki에 readme 작성 문법 방법 참고 <br>
 2020-04-04 : wiki에 github 코드리뷰 방법 참고 (pullreq 사용)
+2020-04-12 : git ignore 
 
 ## 목차
 Week| Contents |
