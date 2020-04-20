@@ -3,8 +3,11 @@
 최신 Javascript와 React를 익히고 React 기반 영화 웹 어플리케이션 제작을 목표로 합니다.
 <br>
 ## 공지!
-2020-04-03 : wiki에 readme 작성 문법 방법 참고 <br>
+2020-04-03 : wiki에 readme 작성 문법 방법 참고
+
 2020-04-04 : wiki에 github 코드리뷰 방법 참고 (pullreq 사용)
+
+2020-04-12 : wiki에 git ignore 적용 방법 참고 
 
 ## 목차
 Week| Contents |
