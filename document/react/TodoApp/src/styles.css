@@ -1,19 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@600&display=swap");
+
 .App {
   font-family: sans-serif;
   text-align: center;
 }
 
-.inputField {
-  text-align: center;
+body {
+  background-color: #f6f6f4;
 }
 
+.inputField {
+  text-align: center;
+  font-weight: bold;
+}
+
+input {
+  margin: 10px;
+}
 .wrapper {
   margin: auto;
   overflow: auto;
 }
 
-h1 {
+header {
+  background-color: #ffe01b;
   text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  color: #403b3b;
+  font-family: "Bangers", sans-serif;
+  padding: 10px;
 }
 
 .Lists {
@@ -24,16 +44,18 @@ h1 {
 }
 
 .Type {
-  padding: 15px;
+  padding: 10px;
   float: left;
   width: 300px;
 }
 
 .Type h2 {
-  padding: 0;
+  padding: 5px;
+
   margin: 0;
   text-align: center;
-  background-color: gainsboro;
+  background-color: #007c89;
+  color: #f6f6f4;
 }
 
 .TODO,
@@ -41,6 +63,18 @@ h1 {
 .DONE {
   margin: 10px;
   background-color: white;
-  padding: 3px;
-  border: 2px solid gainsboro;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.TODO h3,
+.DOING h3,
+.DONE h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.move,
+.delete {
+  margin-right: 8px;
 }

@@ -1,13 +1,15 @@
 import React from "react";
 
-function Lists({ list, onRemove }) {
+function Lists({ list, onRemove, onMove }) {
   const { id, username, contents, type } = list;
   if (type === "DONE") {
     return (
       <div className={type}>
         <h3> {contents} </h3>
         <p>작성자 : {username}</p>
-        <button onClick={() => onRemove(id)}>삭제</button>
+        <button className="delete" onClick={() => onRemove(id)}>
+          삭제
+        </button>
       </div>
     );
   } else {
@@ -15,22 +17,31 @@ function Lists({ list, onRemove }) {
       <div className={type}>
         <h3> {contents} </h3>
         <p>작성자 : {username}</p>
-        <button onClick={() => onRemove(id)}>삭제</button>
-        {/* <button onClick={() => onMove(id)}>이동</button> */}
+        <button className="delete" onClick={() => onRemove(id)}>
+          삭제
+        </button>
+        <button className="move" onClick={() => onMove(id)}>
+          이동
+        </button>
       </div>
     );
   }
 }
 
-function TodoList({ lists, onRemove }) {
+function TodoList({ lists, onRemove, onMove }) {
   return (
     <div className="Lists">
       <div className="Type" id="TODO">
         <h2>TODO</h2>
         {lists.map(
-          list =>
+          (list, index) =>
             list.type === "TODO" && (
-              <Lists list={list} key={list.id} onRemove={onRemove} />
+              <Lists
+                list={list}
+                onRemove={onRemove}
+                onMove={onMove}
+                key={index}
+              />
             )
         )}
       </div>
@@ -39,7 +50,12 @@ function TodoList({ lists, onRemove }) {
         {lists.map(
           (list, index) =>
             list.type === "DOING" && (
-              <Lists list={list} key={list.id} onRemove={onRemove} />
+              <Lists
+                list={list}
+                onRemove={onRemove}
+                onMove={onMove}
+                key={index}
+              />
             )
         )}
       </div>
@@ -47,7 +63,9 @@ function TodoList({ lists, onRemove }) {
         <h2>DONE</h2>
         {lists.map(
           (list, index) =>
-            list.type === "DONE" && <Lists list={list} key={list.id} />
+            list.type === "DONE" && (
+              <Lists list={list} onRemove={onRemove} key={index} />
+            )
         )}
       </div>
     </div>

@@ -7,16 +7,16 @@ function App() {
   const [inputs, setInputs] = useState({
     username: "",
     contents: "",
-    type: ""
+    type: "",
   });
 
   const { username, contents, type } = inputs;
 
-  const onChange = e => {
+  const onChange = (e) => {
     const { name, value } = e.target;
     setInputs({
       ...inputs,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -25,47 +25,62 @@ function App() {
       id: 1,
       username: "Rory",
       contents: "React 공부하기",
-      type: "TODO"
+      type: "TODO",
     },
     {
-      id: 1,
+      id: 2,
       username: "Rory",
       contents: "React 공부하기",
-      type: "DONE"
-    }
+      type: "DONE",
+    },
   ]);
 
-  const nextId = useRef(2);
+  const nextId = useRef(3);
 
-  const onCreate = e => {
+  const onCreate = (e) => {
     const list = {
       id: nextId.current,
       username,
       contents,
-      type
+      type,
     };
     setlists([...lists, list]);
     nextId.current += 1;
+    setInputs({
+      username: "",
+      contents: "",
+      type: "",
+    });
+    document.querySelector('input[name="type"]:checked').checked = false;
   };
 
-  const onRemove = id => {
-    setlists(lists.filter(list => list.id !== id));
+  const onRemove = (id) => {
+    setlists(lists.filter((list) => list.id !== id));
   };
 
-  // const onMove = id => {
-  //   let result;
-  //   lists.map(list => (list.id === id ? (result = list) : list));
-  //   setlists(
-  //     result.type === "TODO"
-  //       ? { ...result, type: "DOING" }
-  //       : { ...result, type: "DONG" }
-  //   );
-  //   console.log(lists);
-  // };
+  const onMove = (id) => {
+    setlists(
+      lists.map(function (list) {
+        if (list.id === id) {
+          if (list.type === "TODO") {
+            return { ...list, type: "DOING" };
+          } else {
+            return { ...list, type: "DONE" };
+          }
+        } else {
+          return list;
+        }
+      })
+    );
+  };
 
+  console.log(lists);
   return (
     <div className="wrapper">
-      <h1>Todo List</h1>
+      <header>
+        {" "}
+        <h1>Todo List</h1>{" "}
+      </header>
       <MakeList
         username={username}
         contents={contents}
@@ -73,7 +88,7 @@ function App() {
         onChange={onChange}
         onCreate={onCreate}
       />
-      <TodoList lists={lists} onRemove={onRemove} />
+      <TodoList lists={lists} onRemove={onRemove} onMove={onMove} />
     </div>
   );
 }
