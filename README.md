@@ -15,8 +15,8 @@ Week| Contents |
 1주차 | [Javascript] Variables, Functions, Strings, Array, Destructuring, Rest and Spread :ok_hand: |
 2주차 | [Javascript] Promises, Async/Await, Classes, Set and Map :ok_hand:|
 3주차 | [React] JSX & Props, State :ok_hand:|
-4주차 | [React] Making the Movie App, Deploying, Routing :runner: |
-5주차 | React 활용한 웹 프로젝트 진행 |
+4주차 | [React] Making the Movie App, Deploying, Routing :ok_hand: |
+5주차 | React 활용한 웹 프로젝트 진행 :runner:|
 6주차 | React 활용한 웹 프로젝트 진행 |
 
 ## 활동 방법
