@@ -25,3 +25,6 @@ Week| Contents |
 <br>:warning: 스터디 멤버는 다른 멤버들의 스터디를 독려하기 위해 업로드한 게시글마다 리뷰를 남겨주시길 바랍니다.
 <br> 이슈를 남겨서 궁금한 점을 질문하셔도 되고, Wiki에 참고할 만한 사이트를 적어주셔도 좋습니다. :clap: <br>
 위키 사용 예시) https://github.com/antaehyeon/Hyeon-Schedule/wiki
+
+## 활동 결과
+[결과 PPT](https://github.com/Rory0304/WebStudyClub/blob/master/%ED%8A%9C%ED%84%B0%EB%A7%81_%EC%B5%9C%EC%A2%85%EA%B2%B0%EA%B3%BCPPT_%EB%AC%B8%EC%88%98%EB%A6%BC_%EB%B0%95%EC%98%88%EB%A6%BC_%EC%82%AC%EC%9D%80%EC%88%98.pdf, "result link")
