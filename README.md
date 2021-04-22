@@ -27,4 +27,4 @@ Week| Contents |
 위키 사용 예시) https://github.com/antaehyeon/Hyeon-Schedule/wiki
 
 ## 활동 결과
-[결과 PPT](https://github.com/Rory0304/WebStudyClub/blob/master/%ED%8A%9C%ED%84%B0%EB%A7%81_%EC%B5%9C%EC%A2%85%EA%B2%B0%EA%B3%BCPPT_%EB%AC%B8%EC%88%98%EB%A6%BC_%EB%B0%95%EC%98%88%EB%A6%BC_%EC%82%AC%EC%9D%80%EC%88%98.pdf, "result link")
+[결과 PPT](https://github.com/Rory0304/WebStudyClub/blob/master/%ED%8A%9C%ED%84%B0%EB%A7%81_%EC%B5%9C%EC%A2%85%EA%B2%B0%EA%B3%BCPPT_%EB%AC%B8%EC%88%98%EB%A6%BC_%EB%B0%95%EC%98%88%EB%A6%BC_%EC%82%AC%EC%9D%80%EC%88%98.pdf "result link")
